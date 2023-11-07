@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+    
+    <header>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Fortnite</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introduccion">Introducción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#caracteristicas">Características</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container mt-5">
+        <section id="introduccion">
+           <img src="OT.png" width="100"   alt="fornite es vida">
+            <h2>Introducción a Fortnite</h2>
+            <p>Fortnite es un popular videojuego de batalla real desarrollado por Epic Games.</p>
+            <p> En el juego, los jugadores son lanzados a una isla donde compiten para ser el último sobreviviente.</p>
+            <p> La premisa básica del juego es la supervivencia: los jugadores deben recolectar recursos, construir estructuras y enfrentarse entre sí para sobrevivir.</p>
+            <p>Fortnite se destaca por su estilo artístico colorido y su capacidad para construir estructuras en tiempo real, lo que agrega una dimensión estratégica única al juego. </p>
+            <p>Además de su modo de batalla real, Fortnite ofrece varios modos de juego, como creativo y salvar al mundo.</p>
+        
+        </section>
+        
+        <section id="caracteristicas">
+            <h2>Características de Fortnite</h2>
+            <p><p>Fortnite es conocido por sus diversas características que lo hacen único y popular entre los jugadores de todo el mundo.</p>
+            <p>Aquí hay algunas de sus principales características:</p>
+            <p><strong>1. Modo de Batalla Real:</strong> Los jugadores compiten en un mapa enorme donde el objetivo es ser el último sobreviviente. Se pueden jugar en solitario, dúos o escuadrones.</p>
+            <p><strong>2. Construcción en Tiempo Real:</strong> Los jugadores pueden recolectar recursos y construir estructuras como paredes, escaleras y techos durante la partida, lo que añade una dimensión estratégica al juego.</p>
+            <p><strong>3. Estilo Artístico Único:</strong> Fortnite presenta un estilo artístico animado y colorido que lo diferencia de otros juegos de batalla real.</p>
+            <p><strong>4. Eventos y Temporadas:</strong> El juego ofrece eventos en vivo y temporadas regulares que introducen nuevas mecánicas de juego, desafíos y elementos cosméticos.</p>
+            <p><strong>5. Pase de Batalla:</strong> Los jugadores pueden adquirir el Pase de Batalla, que les permite desbloquear recompensas exclusivas a medida que suben de nivel, incluyendo trajes, bailes y otros objetos cosméticos.</p>
+            <p><strong>6. Modo Creativo:</strong> Los jugadores pueden crear sus propios mundos y juegos utilizando herramientas y elementos del juego en el Modo Creativo.</p>
+            <p><strong>7. Colaboraciones Crossover:</strong> Fortnite ha presentado colaboraciones con otras franquicias populares, como Marvel, Star Wars y personajes de películas y series, introduciendo eventos temáticos y skins basados en estas colaboraciones.</p>
+            <p><strong>8. Actualizaciones Constantes:</strong> Epic Games actualiza regularmente el juego, introduciendo nuevas armas, objetos y cambios en el mapa para mantener el juego fresco y emocionante.</p>
+            <p>Estas características han contribuido significativamente a la popularidad y longevidad de Fortnite en la industria de los videojuegos.</p>
+            
+        </p>
+        </section>
+        
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    
+                    <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            
+        </section>
+        
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Fortnite. by Angello Godinez.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            // Aquí puedes agregar el código JavaScript para manejar el formulario de contacto
+            // Por ejemplo, puedes utilizar fetch para enviar los datos del formulario a un servidor
+            // y luego mostrar un mensaje utilizando SweetAlert.
+            Swal.fire({
+            
+                icon: 'success',
+                title: '¡Mensaje enviado!',
+                text: 'Gracias por ponerte en contacto con nosotros.',
+
+            });
+        });
+    </script>
+</body>
+</html>
